@@ -5,8 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Single Day', cursive;
+  background-color: #000;
 }
-
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&family=Single+Day&display=swap');
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
