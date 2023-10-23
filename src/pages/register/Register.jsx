@@ -96,14 +96,6 @@ const Register = () => {
               />
             ))}
             <div className="term-check-box">
-              {/* <FormInputs
-                id="5" // Assign a unique ID for the checkbox input.
-                type="checkbox"
-                checked={checkboxChecked}
-                onChange={handleCheckboxChange}
-                errorMessage={checkboxError ? "Please check the box" : ""}
-                required
-              /> */}
               <div className="term-flex">
                 <input
                   className="term-check-input"
