@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "../category/category.css";
-import action from "../../assets/action.png";
-import drama from "../../assets/drama.png";
-import fantasy from "../../assets/fantasy.png";
-import fiction from "../../assets/fiction.png";
-import horror from "../../assets/horror.png";
-import music from "../../assets/music.png";
-import romance from "../../assets/romance.png";
-import thriller from "../../assets/thriller.png";
-import western from "../../assets/western.png";
+import action from "../../assets/img/action.png";
+import drama from "../../assets/img/drama.png";
+import fantasy from "../../assets/img/fantasy.png";
+import fiction from "../../assets/img/fiction.png";
+import horror from "../../assets/img/horror.png";
+import music from "../../assets/img/music.png";
+import romance from "../../assets/img/romance.png";
+import thriller from "../../assets/img/thriller.png";
+import western from "../../assets/img/western.png";
 import CategCloseBtn from "./CategCloseBtn";
-import alert from "../../assets/alert-icon.png";
+import alert from "../../assets/img/alert-icon.png";
 import { useNavigate } from "react-router-dom";
 
 const SelectCategory = () => {
@@ -103,7 +103,7 @@ const SelectCategory = () => {
 
     if (cateValue.length >= 3) {
       localStorage.setItem("selectedCategories", JSON.stringify(cateValue));
-      navigate("/browse");
+      navigate("/home");
     } else {
       console.log("alert");
     }
@@ -131,7 +131,7 @@ const SelectCategory = () => {
                   );
                 })}
               </ul>
-              <div className={cateValue.length >= 3 ? "d-none" : "alert-msg"}>
+              <div className={cateValue.length >= 4 ? "d-none" : "alert-msg"}>
                 <img src={alert} alt="" />
                 <p>Minimum 3 category required</p>
               </div>

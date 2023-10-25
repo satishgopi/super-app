@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../register/register.css";
-import signupBg from "../../assets/signup-bg.png";
+import signupBg from "../../assets/img/signup-bg.png";
 import FormInputs from "./FormInputs";
 import { useNavigate } from "react-router-dom";
 

@@ -2,7 +2,7 @@ import "./App.css";
 import Register from "./pages/register/Register";
 import SelectCategory from "./pages/category/Select-category";
 import { Routes, Route } from "react-router-dom";
-import Browse from "./pages/browse/browse";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Register />} />
         <Route path="/category" element={<SelectCategory />} />
-        <Route path="/browse" element={<Browse />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </div>
   );
