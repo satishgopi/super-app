@@ -28,7 +28,7 @@
 .home-page-grid {
   display: grid;
   row-gap: 1rem;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 33% 33% auto;
   /* column-gap: 2rem; */
   grid-template-areas:
     "p all n"
@@ -39,6 +39,6 @@
 .home-page-grid > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
+  border-radius: 1.5rem;
 }

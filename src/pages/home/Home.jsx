@@ -1,6 +1,8 @@
 import React from "react";
 import Profile from "../../components/Profile";
 import "../home/home.css";
+import Weather from "../../components/Weather";
+import News from "../../components/News";
 
 const Home = () => {
   return (
@@ -11,7 +13,7 @@ const Home = () => {
             <Profile />
           </div>
           <div className="item2">
-            <h1>weather</h1>
+            <Weather />
           </div>
           <div className="item3">
             <h1>All Notes</h1>
@@ -20,7 +22,7 @@ const Home = () => {
             <h1>Timer</h1>
           </div>
           <div className="item5">
-            <h1>News</h1>
+            <News />
           </div>
         </div>
         <div>
