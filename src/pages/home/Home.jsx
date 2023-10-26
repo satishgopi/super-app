@@ -3,6 +3,8 @@ import Profile from "../../components/Profile";
 import "../home/home.css";
 import Weather from "../../components/Weather";
 import News from "../../components/News";
+import Notes from "../../components/Notes";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,17 +18,19 @@ const Home = () => {
             <Weather />
           </div>
           <div className="item3">
-            <h1>All Notes</h1>
+            <Notes />
           </div>
           <div className="item4">
             <h1>Timer</h1>
           </div>
           <div className="item5">
-            <News />
+            <News className="item5" />
           </div>
         </div>
-        <div>
-          <button className="browse-btn">Browse</button>
+        <div style={{ textAlign: "end", marginBottom: "2rem" }}>
+          <NavLink to="/browse">
+            <button className="browse-btn">Browse</button>
+          </NavLink>
         </div>
       </div>
     </>

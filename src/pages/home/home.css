@@ -3,12 +3,15 @@
   background: #148a08;
   color: #fff;
   text-align: center;
-  font-family: DM Sans;
-  font-size: 23.526px;
+  font-family: sans-serif;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 92.2%; /* 21.691px */
-  letter-spacing: 0.471px;
+  line-height: 92.2%;
+  letter-spacing: 0.5px;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
 }
 .item1 {
   grid-area: p;
@@ -35,10 +38,16 @@
     "w all n"
     "t t n";
   gap: 2rem;
+  margin: 2rem 0;
 }
-.home-page-grid > div {
+/* .home-page-grid > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-size: 30px;
   border-radius: 1.5rem;
+} */
+.item3 {
+  border-radius: 1.5rem;
+  border-radius: 19px;
+  background-color: #f1c75b;
 }

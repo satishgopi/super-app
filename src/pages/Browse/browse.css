@@ -1,0 +1,21 @@
+.browse-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.browse-nav h1 {
+  color: #72db73;
+  font-family: Single Day;
+  font-size: 47.333px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 66.119px */
+}
+.browse-nav img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
