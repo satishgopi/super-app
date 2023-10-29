@@ -5,6 +5,7 @@ import Weather from "../../components/Weather";
 import News from "../../components/News";
 import Notes from "../../components/Notes";
 import { NavLink } from "react-router-dom";
+import Timer from "../../components/Timer";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
             <Notes />
           </div>
           <div className="item4">
-            <h1>Timer</h1>
+            <Timer />
           </div>
           <div className="item5">
             <News className="item5" />

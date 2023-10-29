@@ -15,7 +15,7 @@
 .news-img-box .title {
   position: absolute;
   padding: 1rem;
-  bottom: 12px;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.74);
   height: auto;
   text-align: start;

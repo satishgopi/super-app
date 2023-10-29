@@ -32,25 +32,25 @@
   padding: 1rem 1.5rem;
 }
 /* width */
-::-webkit-scrollbar {
+.cat-index-wrapp::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.cat-index-wrapp::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+.cat-index-wrapp::-webkit-scrollbar-thumb {
   background: #579be9;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.cat-index-wrapp::-webkit-scrollbar-thumb:hover {
   background: #579be9;
 }
 
