@@ -119,4 +119,19 @@
   .dot-title {
     font-size: 18px;
   }
+  .timer-btn-wrapp {
+    padding: 1rem;
+  }
+  .start-btn {
+    width: 80%;
+  }
+  .timer-title {
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .timer-title p {
+    font-size: 18px;
+  }
 }

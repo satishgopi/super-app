@@ -80,3 +80,8 @@
   letter-spacing: 0.82px;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 600px) {
+  .profile-img img {
+    width: 70px;
+  }
+}
