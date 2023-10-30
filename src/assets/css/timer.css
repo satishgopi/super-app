@@ -109,4 +109,5 @@
   border-radius: 50%;
   z-index: 1;
   position: absolute;
+  border: 1px solid #ff6a6a5c;
 }

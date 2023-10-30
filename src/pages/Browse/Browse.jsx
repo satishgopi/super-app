@@ -1,36 +1,10 @@
-import React, { useEffect, useState } from "react";
-import profile from "../../assets/img/profile-pic.png";
+import React from "react";
+import profile from "../../assets/img/ic-profile-round.png";
 import "../Browse/browse.css";
 import { Link } from "react-router-dom";
+import Movie from "../../components/Movie";
 
-const Browse = () => {
-  const URL =
-    "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=bojack&country=uk";
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        const options = {
-          method: "GET",
-          headers: {
-            "X-RapidAPI-Key":
-              "8da0dcf2d7mshbe987098f3d6242p19bd90jsn8d09934e7b16",
-            "X-RapidAPI-Host":
-              "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
-          },
-        };
-        const response = await fetch(URL, options);
-        const data = await response.text();
-        setMovies(data);
-        console.log(movies);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchMovies();
-  }, [URL]);
-
+const Browse = (props) => {
   return (
     <>
       <div className="container">
@@ -51,7 +25,18 @@ const Browse = () => {
           Entertainment according to your choice
         </h1>
         <div>
-          <h1>{movies.title}</h1>
+          <h1
+            style={{
+              fontSize: "28px",
+              textAlign: "start",
+              color: "#878787",
+              fontFamily: "sans-serif",
+              margin: "1.5rem 0 0",
+            }}
+          >
+            Action
+          </h1>
+          <Movie />
         </div>
       </div>
     </>

@@ -9,7 +9,6 @@ const News = () => {
   const [loading, setLoading] = useState(false);
   const [isError, setIsError] = useState({ status: false, msg: "" });
   const random = Math.floor(Math.random() * 100) + 1;
-  console.log(random);
 
   const fetchNewsData = async (apiUrl) => {
     setLoading(true);
@@ -21,7 +20,6 @@ const News = () => {
       setNewsData(data.articles[random]);
       setLoading(false);
       setIsError({ status: false, msg: "" });
-      console.log(data);
       if (response.status === 404) {
         throw new Error("data not found");
       }

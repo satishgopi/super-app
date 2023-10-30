@@ -21,8 +21,8 @@ const Register = () => {
       name: "firstName",
       type: "text",
       placeholder: "first Name",
-      errorMessage: "Field is required",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      errorMessage: "Field is required, Minimum 3 letters",
+      pattern: "^[A-Za-z0-9 ]{3,16}$",
       required: true,
     },
     {
@@ -31,7 +31,7 @@ const Register = () => {
       type: "text",
       placeholder: "userName",
       errorMessage: "Field is required",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      pattern: "^[A-Za-z0-9 ]{3,16}$",
       required: true,
     },
     {

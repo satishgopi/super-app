@@ -12,6 +12,7 @@
   padding: 1rem 2rem;
   border: none;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 .item1 {
   grid-area: p;

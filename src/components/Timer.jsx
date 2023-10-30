@@ -22,7 +22,6 @@ const Timer = () => {
   };
   return (
     <>
-      {/* <TimerComponent duration={5 * 60 * 60 * 1000} /> */}
       <TimerComponent duration={calculateDuration()} onSubmit={handleSubmit} />
     </>
   );
