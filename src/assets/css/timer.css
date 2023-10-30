@@ -111,3 +111,12 @@
   position: absolute;
   border: 1px solid #ff6a6a5c;
 }
+.dot-title {
+  font-size: 54px;
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .dot-title {
+    font-size: 18px;
+  }
+}

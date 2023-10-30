@@ -41,14 +41,34 @@
   gap: 2rem;
   margin: 2rem 0;
 }
-/* .home-page-grid > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  font-size: 30px;
-  border-radius: 1.5rem;
-} */
+
 .item3 {
   border-radius: 1.5rem;
   border-radius: 19px;
   background-color: #f1c75b;
+}
+.notes-box {
+  border: none;
+  outline: none;
+  background-color: #f1c75b;
+  margin-top: 1rem;
+  font-size: 18px;
+  padding: 1rem;
+  resize: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-page-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .timer-box {
+    flex-direction: column;
+  }
+  .notes-box {
+    height: 100px;
+  }
+  .browse-btn {
+    width: 100%;
+  }
 }

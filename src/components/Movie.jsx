@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../pages/Browse/browse.css";
 
 const Movie = () => {
   const URL =
@@ -16,32 +17,16 @@ const Movie = () => {
   }, []);
   return (
     <>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)" }}>
+      <div className="movie-card-grid">
         {movieData.map((item) => {
           return (
             <>
               <div>
                 <img
-                  style={{
-                    width: "250px",
-                    height: "130px",
-                    objectFit: "cover",
-                    margin: "1.5rem 0 4px",
-                  }}
                   src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
                   alt=""
                 />
-                <h1
-                  style={{
-                    color: "#fff",
-                    fontSize: "14px",
-                    textAlign: "start",
-                    fontFamily: "sans-serif",
-                    marginLeft: "1rem",
-                  }}
-                >
-                  {item.title}
-                </h1>
+                <h1>{item.title}</h1>
               </div>
             </>
           );

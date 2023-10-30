@@ -111,7 +111,7 @@ const SelectCategory = () => {
   return (
     <>
       <div className="container">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="category-form">
           <div className="category-wrapp">
             <div className="left-box">
               <h1>Super app</h1>
@@ -161,7 +161,7 @@ const SelectCategory = () => {
               </ul>
             </div>
           </div>
-          <div style={{ textAlign: "end", margin: "2rem 1rem" }}>
+          <div className="next-page-btnwrap">
             <button type="submit" className="next-page-btn">
               Next Page
             </button>

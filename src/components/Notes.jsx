@@ -12,15 +12,7 @@ const Notes = () => {
     <>
       <h1>All notes</h1>
       <textarea
-        style={{
-          border: "none",
-          outline: "none",
-          backgroundColor: "#f1c75b",
-          marginTop: "1rem",
-          fontSize: "18px",
-          padding: "1rem",
-          resize: "none",
-        }}
+        className="notes-box"
         value={data}
         onChange={handleChange}
         placeholder="type"

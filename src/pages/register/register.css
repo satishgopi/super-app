@@ -162,3 +162,14 @@
   color: #f00;
   font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .register-box .left {
+    display: none;
+  }
+  .signup-wrapper {
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+  }
+}

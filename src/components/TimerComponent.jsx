@@ -142,7 +142,7 @@ const TimerComponent = ({ duration, onSubmit }) => {
                 </div>
               </li>
               <li>
-                <div>:</div>
+                <div className="dot-title">:</div>
               </li>
               <li>
                 <div className="timer-btn">
@@ -156,7 +156,7 @@ const TimerComponent = ({ duration, onSubmit }) => {
                 </div>
               </li>
               <li>
-                <div>:</div>
+                <div className="dot-title">:</div>
               </li>
               <li>
                 <div className="timer-btn">
@@ -168,9 +168,6 @@ const TimerComponent = ({ duration, onSubmit }) => {
                     <img src={downArrow} alt="" />
                   </button>
                 </div>
-              </li>
-              <li>
-                <div>:</div>
               </li>
             </ul>
             <button type="button" className="start-btn" onClick={handleStart}>

@@ -19,3 +19,34 @@
   cursor: pointer;
   object-fit: cover;
 }
+.movie-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.movie-card-grid div img {
+  width: 250px;
+  height: 130px;
+  object-fit: cover;
+  margin: 1.5rem 0 4px;
+}
+.movie-card-grid div h1 {
+  color: #fff;
+  font-size: 14px;
+  text-align: start;
+  font-family: sans-serif;
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .movie-card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .movie-card-grid div img {
+    width: 100%;
+    height: 175px;
+  }
+  .movie-card-grid div h1 {
+    margin-left: 0;
+    font-size: 18px;
+    margin-top: 0.5rem;
+  }
+}
